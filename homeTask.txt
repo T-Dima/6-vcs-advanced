@@ -1,0 +1,98 @@
+1). 	git init добавл€ем папку .git 
+   	git branch architecture создаем бренчу architecture
+	git checkiut architecture переходим в бренчу architecture
+	mkdir assets создаем папку assets 
+	cd assets переходим в папку assets 
+	cd .. - вернутьс€ в главную папку
+	mkdir uploads создаем папку uploads 
+	cd uploads переходим в нее
+	cd .. - вернутьс€ в главную папку
+	git add index.html добавл€ем файл index.html
+	git commit -m"first commit" первый коммит
+	git add assets
+	git commit -m"add assets files"
+	добавил в каталог uploads файл !.gitignore
+	git status 
+	git add uploads добавил uploads 
+	git commit -m"add git ignore" комит
+	git status смотрю статус всего
+	git checkout master перешел в мастер
+	git branch проверка перешел ли
+	git megre architecture сли€ние с архитектурой 
+	git branch -d architecture удалить ветку
+
+
+
+2)	git checkout -b support создал ветку сапорт
+	mkdir first создал папку first 
+	cd first перешл в нее 
+	git chackout master переключилс€ в мастер 
+	добавил файл в папку assets second 
+	git status смотрю статус 
+	git add assets second.txt добавил в папку второй файл
+	git commit -m"add second" комичу
+	git checkout support переключилс€ в ветку сапорт	
+	git rebase master rebase с мастером
+	добавил файл в папку first third.txt 
+	git status
+	git commit -m "add third.txt"
+	git chackout master переключилс€ в мастер
+	git merge support мерджу с сапортом
+	git branch -d architecture удалить ветку
+
+3)	создал файл fifth.txt
+	git status
+	git add .
+	git commit -m"add fifth"
+	git tag v0 добавил короткий тег v0
+	mkdir e создал папку e 
+	git push e master --tags запушал tag в папку е мастера
+	
+	
+4)	git submodule status --recursive  смотрю статус 
+	git submodule add https://github.com/skybaros/Hello-World.git submodule-example добавл€ю субмодуль
+	git submodule status статус 
+	git status
+	cat .gitmodules провер€ем по€вилс€ ли файл субмодул€
+	git commit -m "added a submodule" комит
+
+5)	git checkout -b gh-pages создать и перейти в ветку gh-pages
+	git branch проверим перешли ли
+	touch index.html создали файл index
+	git status првоерка 
+	git add . добавим все
+	git commit -m'add index.html' комит
+	git push -u origin master пушаем все на сервер
+	https://github.com/T-Dima/jsStudy/ провер€ем по€вилось ли на сервере
+	изменени€ в файле index 
+	git status статус
+	git add . добавим все
+	git commit -m 'изменени€ в файле index' комит
+	git push -u origin gh-pages пушаем все на сервер и првоер€м
+	все ок
+	
+6)	touch file.txt создали файл file.txt
+	git status статус 
+	git add file.txt добавили только файл file.txt
+	git commit -a-m'add index.html gh-pages' комит 
+	git checkout master переключились в мастер
+	git branch проверка переключени€
+	создал файл file.txt
+	с новым текстом
+	git status статус
+	git add file.txt добавили в гит 
+	git commit -a-m'add index.html master' комит 
+	git merge master мердж (конфликт)
+	git merge --abort - отмена мерджа 
+	смотрю file.txt оставл€ю новые изменени€ после =====
+	git status
+	git add .
+	git merge gh-pages 
+	готово
+	
+	
+	
+	
+	
+	 	
+
